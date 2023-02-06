@@ -117,4 +117,4 @@ class reCaptchaV2(object):
         with sr.AudioFile(audio_path) as source:
             audio = r.record(source)
 
-        return r.recognize_sphinx(audio)
+        return r.recognize_google(audio)
